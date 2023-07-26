@@ -50,6 +50,10 @@ contract CryptoDevsDAO is Ownable {
         cryptoDevsNFT = ICryptoDevsNFT(_cryptoDevsNFT);
     }
 
+    receive() external payable {}
+
+    fallback() external payable {}
+
      /**
         @dev Creates a new proposal for the CryptoDevsDAO. The proposal is created with the given NFT tokenID and a deadline of 5 minutes. The proposalID is returned.
         @param _nftTokenId - the NFT tokenID to use for the proposal
@@ -129,6 +133,9 @@ contract CryptoDevsDAO is Ownable {
 
     }
 
+    /**
+        @dev allows the DAO owner to withdraw the ETH balance of the DAO contract
+     */
     function withdrawETH()
         external
         onlyOwner
