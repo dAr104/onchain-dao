@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
  * @dev Anyone can mint a CryptoDev NFT
  */
 
-contract CryptoDevs is ERC721Enumerable {
+contract CryptoDevsNFT is ERC721Enumerable {
     constructor() ERC721("CryptoDevs", "CDEV") {}
 
     function mint() public {

@@ -4,7 +4,7 @@ pragma solidity ^0.8.18;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./interfaces/IFakeNFTMarketPlace.sol";
 import "./interfaces/ICryptoDevsNFT.sol";
-import "./libraries/CryptoDevsDAOLibrary.sol/";
+import "./libraries/CryptoDevsDAOLibrary.sol";
 
 
 contract CryptoDevsDAO is Ownable {
